@@ -12,6 +12,8 @@ import GitHubCorner from '../src/components/GitHubCorner';
 import QuizBackground from '../src/components/QuizBackground';
 import QuizLogo from '../src/components/QuizLogo';
 import QuizContainer from '../src/components/QuizContainer';
+import Input from '../src/components/Input';
+import Button from '../src/components/Button';
 
 /*
 const BackgroundImage = styled.div`
@@ -36,34 +38,34 @@ export default function Home() {
         <QuizLogo />
         <Widget>
           <Widget.Header>
-            <h1>
+            <h3>
               Bem-vindo(a) ao
               {' '}
               {db.title}
-            </h1>
+            </h3>
           </Widget.Header>
 
           <Widget.Content>
             <p>{db.description}</p>
 
-            <form onSubmit={function (e) {
-              e.preventDefault();
-              router.push(`/quiz?name=${name}`);
-            }}
+            <form
+              onSubmit={function (e) {
+                e.preventDefault();
+                router.push(`/quiz?name=${name}`);
+              }}
             >
-              <input
-                onChange={function (e) {
-                  console.log(e.target.value);
-                  // State
-                  // name = e.target.value;
+              <Input
+                name="nomeDoUsuario"
+                onChange={(e) => {
                   setName(e.target.value);
                 }}
                 placeholder="Diz aí seu nome"
+                value={name}
               />
-              <button type="submit" disabled={name.length === 0}>
-                jogar como
-                {name}
-              </button>
+              <Button type="submit" disabled={name.length === 0}>
+                {`jogar como
+                ${name}`}
+              </Button>
             </form>
           </Widget.Content>
         </Widget>

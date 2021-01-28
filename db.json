@@ -1,44 +1,113 @@
 {
-   "bg": "/bg.png",
-   "title": "Random Quiz",
-   "description": "Aqui você poderá testar seu nível de conhecimentos gerais respondendo à perguntas aleátorias!",
-   "questions": [
-     {
-       "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-       "title": "Como fazer um seletor por id via CSS?",
-       "description": "Essa é pra aquecer",
-       "answer": 2,
-       "alternatives": [
-         ".elemento",
-         "*elemento",
-         "#elemento",
-         "%elemento"
-       ]
-     },
-     {
-       "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-       "title": "Como fazer um background gradiente com css?",
-       "description": "Faz tempo em haha",
-       "answer": 0,
-       "alternatives": [
-          "background: linear-gradient(#e66465, #9198e5);",
-          "background: gradient(#e66465, #9198e5);"
-       ]
-     }
-   ],
-   "external": [
-     ""
-   ],
-   "theme": {
-     "colors": {
-       "primary": "#673ab7",
-       "secondary": "#ffc400",
-       "mainBg": "#171B35",
-       "buttonColor": "#ff9d00",
-       "contrastText": "#FFFFFF",
-       "wrong": "#FF5722",
-       "success": "#4CAF50"
-     },
-     "borderRadius": "4px"
-   }
- }
+  "bg": "/bg.png",
+  "title": "Quote'z",
+  "description": "Você é capaz de acertar 'quem disse' cada frase icônica contida neste quiz?!",
+  "questions": [
+    {
+      "image": "https://www.reactiongifs.com/r/2013/10/tim-and-eric-mind-blown.gif",
+      "title": "Que cientista disse...",
+      "description": "A mente que se abre a uma nova ideia jamais voltará ao seu tamanho original.",
+      "answer": 3,
+      "alternatives": [
+        "Stephen Hawking",
+        "Carl Sagan",
+        "Neil deGrasse Tyson",
+        "Albert Einstein"
+      ]
+    },
+    {
+      "image": "https://3.bp.blogspot.com/-SanmQ771U1c/VPhUV3UsdNI/AAAAAAAAM9s/8IMXkOln-Zw/s1600/Simba%2B1.gif",
+      "title": "Em Rei Leão, que personagem disse...",
+      "description": "O passado pode doer, mas você pode fugir dele, ou aprender com ele!",
+      "answer": 1,
+      "alternatives": [
+        "Mufasa",
+        "Nala",
+        "Rafiki",
+        "Zazu"
+      ]
+    },
+    {
+      "image": "https://i.gifer.com/Anuq.gif",
+      "title": "No papel de Travis Bickle, em Taxi Driver, que ator disse...",
+      "description": "You talkin' to me? You talkin' to me?",
+      "answer": 2,
+      "alternatives": [
+        "Robert DeNiro",
+        "Ryan Gosling",
+        "Robert De Niro",
+        "Robin Willians"
+      ]
+    },
+    {
+      "image": "https://i.pinimg.com/originals/74/e9/2a/74e92a6f41ebcac61b0ec795c5842716.gif",
+      "title": "Em Pulp Fiction, qual personagem disse...",
+      "description": "English, motherfucker! Do you speak it?",
+      "answer": 0,
+      "alternatives": [
+        "Jules Winnfield",
+        "Samuel Jackson",
+        "Vincent Viega",
+        "John Travolta"
+      ]
+    },
+    {
+      "image": "https://4.bp.blogspot.com/--FhY2PU7LrY/WMXE8P3pdNI/AAAAAAAAZLU/hfU41Oeq25ceSOQuc7P4oVNBoi-9T5p0QCLcB/s1600/Gifs%2Banimados%2BBras%25C3%25ADlia%2B3.gif",
+      "title": "Na apresentação do plano de construção de Brasília, qual presidente disse...",
+      "description": "50 anos em 5!",
+      "answer": 2,
+      "alternatives": [
+        "Jair Bolsonaro",
+        "Jânio Quadros",
+        "Juscelino Kubitschek",
+        "João Goulart"
+      ]
+    },
+    {
+      "image": "https://media1.tenor.com/images/37194c59bdb61a2635f7f659518750cb/tenor.gif?itemid=12781454",
+      "title": "No papel de Django, que ator disse...",
+      "description": "D-J-A-N-G-O! The 'D' is silent!",
+      "answer": 3,
+      "alternatives": ["Jimmy Foxx", "James Franco", "Jamie Fine", "Jamie Foxx"]
+    },
+    {
+      "image": "https://media3.giphy.com/media/3o7btWAhlq2eW9FGfK/source.gif",
+      "title": "Durante a corrida espacial em 1961, que astronauta disse...",
+      "description": "Olhei para todos os lados, mas não vi Deus!",
+      "answer": 1,
+      "alternatives": [
+        "Neil Armstrong",
+        "Iuri Gagarin",
+        "Isaac Asimov",
+        "Ryan Gosling"
+      ]
+    },
+    {
+      "image": "https://thumbs.gfycat.com/EmptyIlliterateBoa-max-1mb.gif",
+      "title": "Qual integrante do Choque de Cultura disse...",
+      "description": "Ambiente de música é ambiente de droga!",
+      "answer": 1,
+      "alternatives": ["Renan", "Rogerinho", "Maurílio", "Julinho"]
+    },
+    {
+      "image": "https://afinsophia.org/wp-content/uploads/2020/11/o-pensador-cke.jpg",
+      "title": "Que filósofo disse...",
+      "description": "Cogito, ergo sum.",
+      "answer": 2,
+      "alternatives": ["Sócrates", "Aristóteles", "Descartes", "Platão"]
+    }
+  ],
+  "external": [""],
+  "theme": {
+    "colors": {
+      "primary": "#673ab7",
+      "secondary": "#ffc400",
+      "mainBg": "#171B35",
+      "buttonColor": "#ff9d00",
+      "contrastText": "#FFFFFF",
+      "wrong": "#FF5722",
+      "success": "#4CAF50"
+    },
+    "borderRadius": "4px"
+  }
+}

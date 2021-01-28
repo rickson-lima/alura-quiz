@@ -1,7 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Widget = styled.div`
-  
   margin-top: 24px;
   margin-bottom: 24px;
   border: 1px solid ${({ theme }) => theme.colors.primary};
@@ -13,48 +12,31 @@ const Widget = styled.div`
   h1,
   h2,
   h3 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     line-height: 1;
     margin-bottom: 0;
   }
 
-  p, button {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.15;
-    text-align: left;
-  }
-
-  input {
-     background-color: transparent;
-     color: ${({ theme }) => theme.colors.contrastText};
-
-     border: .2rem ${({ theme }) => theme.colors.primary} solid;
-     border-radius: .4rem;
-
-     outline: none;
-
-     padding: .8rem;
-     width: 100%;
-
-     margin-bottom: 1rem;
-
-  }
-
+  p,
   button {
-   width: 100%;
-   padding: 1rem 1.5rem;
-
-   color: ${({ theme }) => theme.colors.contrastText};
-   font-weight: bold;
-   text-align: center;
-   text-transform: uppercase;
-
-   border-radius: .4rem;
-   background-color: ${({ theme }) => theme.colors.buttonColor};
-   cursor: pointer;
+    font-size: 14px;
+    font-weight: bolder;
+    line-height: 1.15;
   }
+  button {
+     text-align: center;
+  }
+  [type="radio"]:checked + label {
+    background-color: #bfb;
+    border-color: #4c4;
+  }
+  [type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+  }
+  
 `;
 
 Widget.Header = styled.header`
@@ -83,8 +65,39 @@ Widget.Content = styled.div`
     list-style: none;
     padding: 0;
   }
+`;
 
- 
+Widget.Topic = styled.div`
+  outline: 0;
+  text-decoration: none;
+  color: ${({ theme }) => theme.colors.contrastText};
+  background-color: ${({ theme }) => `${theme.colors.primary}70`};
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  border-radius: ${({ theme }) => theme.borderRadius};
+  transition: 0.3s;
+  display: block;
+
+  &:hover,
+  &:focus {
+    border: 2.5px dashed ${({ theme }) => theme.colors.buttonColor};
+    opacity: 1;
+  }
+`;
+
+Widget.Button = styled.button`
+  width: 100%;
+  padding: 1rem 1.5rem;
+
+  color: ${({ theme }) => theme.colors.contrastText};
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+
+  border-radius: 0.4rem;
+  background-color: ${({ theme }) => theme.colors.buttonColor};
+  cursor: pointer;
 `;
 
 export default Widget;
